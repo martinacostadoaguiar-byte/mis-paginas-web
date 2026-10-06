@@ -1,1 +1,832 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Velvet Café - Café de especialidad, pastelería artesanal y buenos momentos.">
+
+    <title>Velvet Café | Cafetería Artesanal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="#inicio" class="logo">
+            ☕ <span>Velvet</span> Café
+        </a>
+
+        <nav id="navMenu">
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="nav-right">
+
+            <button class="cart-button" id="cartButton">
+                🛒 <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    CAFETERÍA ARTESANAL
+                </p>
+
+                <h1>
+                    Un buen café
+                    <span>cambia tu día.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Café de especialidad, pastelería artesanal
+                    y un espacio pensado para disfrutar cada momento.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn primary">
+                        Ver nuestro menú
+                    </a>
+
+                    <a href="#nosotros" class="btn secondary">
+                        Conocenos
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-down">
+                ↓
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <div class="feature">
+                <span>☕</span>
+
+                <h3>Café de especialidad</h3>
+
+                <p>
+                    Granos seleccionados y preparados
+                    por nuestros baristas.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                <span>🥐</span>
+
+                <h3>Pastelería artesanal</h3>
+
+                <p>
+                    Productos frescos preparados
+                    todos los días.
+                </p>
+            </div>
+
+
+            <div class="feature">
+                <span>❤️</span>
+
+                <h3>Hecho con pasión</h3>
+
+                <p>
+                    Cada detalle está pensado para
+                    que disfrutes.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENÚ ================= -->
+
+        <section class="menu-section" id="menu">
+
+            <div class="section-title">
+
+                <p>DESCUBRÍ NUESTROS SABORES</p>
+
+                <h2>Nuestro menú</h2>
+
+                <div class="line"></div>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="🔎 Buscar café, torta, medialuna..."
+                >
+
+            </div>
+
+
+            <!-- CATEGORÍAS -->
+
+            <div class="categories">
+
+                <button
+                    class="category-button active"
+                    data-category="todos">
+
+                    Todos
+
+                </button>
+
+                <button
+                    class="category-button"
+                    data-category="cafe">
+
+                    ☕ Cafés
+
+                </button>
+
+                <button
+                    class="category-button"
+                    data-category="pasteleria">
+
+                    🥐 Pastelería
+
+                </button>
+
+                <button
+                    class="category-button"
+                    data-category="frio">
+
+                    🧋 Bebidas frías
+
+                </button>
+
+                <button
+                    class="category-button"
+                    data-category="dulce">
+
+                    🍰 Dulces
+
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTOS -->
+
+            <div class="products" id="products">
+
+                <article
+                    class="product"
+                    data-name="cappuccino"
+                    data-category="cafe"
+                    data-price="3800">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=800&q=85"
+                            alt="Cappuccino">
+
+                        <span class="tag">
+                            Más pedido
+                        </span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            CAFÉ
+                        </span>
+
+                        <h3>Cappuccino</h3>
+
+                        <p>
+                            Espresso, leche vaporizada
+                            y espuma cremosa.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>$3.800</strong>
+
+                            <button class="add-button">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product"
+                    data-name="cafe latte"
+                    data-category="cafe"
+                    data-price="3500">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&w=800&q=85"
+                            alt="Café Latte">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            CAFÉ
+                        </span>
+
+                        <h3>Café Latte</h3>
+
+                        <p>
+                            Espresso suave con
+                            leche cremosa.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>$3.500</strong>
+
+                            <button class="add-button">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product"
+                    data-name="medialunas"
+                    data-category="pasteleria"
+                    data-price="2500">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85"
+                            alt="Medialunas">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            PASTELERÍA
+                        </span>
+
+                        <h3>Medialunas</h3>
+
+                        <p>
+                            Doradas, suaves y recién horneadas.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>$2.500</strong>
+
+                            <button class="add-button">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product"
+                    data-name="cheesecake"
+                    data-category="dulce"
+                    data-price="4500">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=85"
+                            alt="Cheesecake">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            DULCE
+                        </span>
+
+                        <h3>Cheesecake</h3>
+
+                        <p>
+                            Cheesecake cremoso con
+                            frutos rojos.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>$4.500</strong>
+
+                            <button class="add-button">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product"
+                    data-name="brownie"
+                    data-category="dulce"
+                    data-price="3200">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=85"
+                            alt="Brownie">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            DULCE
+                        </span>
+
+                        <h3>Brownie</h3>
+
+                        <p>
+                            Chocolate intenso con nueces.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>$3.200</strong>
+
+                            <button class="add-button">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product"
+                    data-name="frappuccino"
+                    data-category="frio"
+                    data-price="4200">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=85"
+                            alt="Frappuccino">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            FRÍO
+                        </span>
+
+                        <h3>Frappuccino</h3>
+
+                        <p>
+                            Café frío, hielo y crema batida.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>$4.200</strong>
+
+                            <button class="add-button">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p id="noResults" class="no-results">
+                No encontramos productos con esa búsqueda.
+            </p>
+
+        </section>
+
+
+        <!-- ================= NOSOTROS ================= -->
+
+        <section class="about" id="nosotros">
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    NUESTRA HISTORIA
+                </p>
+
+                <h2>
+                    Más que una cafetería,
+                    <span>un lugar para quedarse.</span>
+                </h2>
+
+                <p>
+                    Velvet Café nació de una idea simple:
+                    crear un espacio donde el café, la comida
+                    y los buenos momentos se encuentren.
+                </p>
+
+                <p>
+                    Seleccionamos cada grano y preparamos
+                    nuestros productos artesanalmente para
+                    ofrecerte una experiencia diferente.
+                </p>
+
+                <a href="#contacto" class="btn primary">
+                    Vení a visitarnos
+                </a>
+
+            </div>
+
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=85"
+                    alt="Interior de Velvet Café">
+
+                <div class="about-badge">
+
+                    <strong>8+</strong>
+
+                    <span>
+                        años creando momentos
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ESTADÍSTICAS ================= -->
+
+        <section class="stats">
+
+            <div class="stat">
+                <strong>8+</strong>
+                <span>Años de experiencia</span>
+            </div>
+
+            <div class="stat">
+                <strong>15K+</strong>
+                <span>Clientes felices</span>
+            </div>
+
+            <div class="stat">
+                <strong>4.9</strong>
+                <span>⭐ Calificación</span>
+            </div>
+
+            <div class="stat">
+                <strong>20+</strong>
+                <span>Productos</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= OPINIONES ================= -->
+
+        <section class="reviews" id="opiniones">
+
+            <div class="section-title">
+
+                <p>LO QUE DICEN NUESTROS CLIENTES</p>
+
+                <h2>Opiniones</h2>
+
+                <div class="line"></div>
+
+            </div>
+
+
+            <div class="reviews-grid">
+
+                <article class="review">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "El mejor café de la zona.
+                        Las medialunas son increíbles
+                        y el lugar es hermoso."
+                    </p>
+
+                    <strong>
+                        Sofía M.
+                    </strong>
+
+                </article>
+
+
+                <article class="review">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Excelente atención y productos
+                        de primera. Siempre volvemos."
+                    </p>
+
+                    <strong>
+                        Martín R.
+                    </strong>
+
+                </article>
+
+
+                <article class="review">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Un lugar perfecto para tomar
+                        un café y trabajar tranquilo."
+                    </p>
+
+                    <strong>
+                        Camila P.
+                    </strong>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section class="contact" id="contacto">
+
+            <div class="section-title">
+
+                <p>¿DÓNDE ESTAMOS?</p>
+
+                <h2>Visitá Velvet</h2>
+
+                <div class="line"></div>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+
+                    <span>📍</span>
+
+                    <h3>Dirección</h3>
+
+                    <p>
+                        Av. Principal 1234
+                        <br>
+                        Buenos Aires
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <span>🕐</span>
+
+                    <h3>Horarios</h3>
+
+                    <p>
+                        Lunes a domingo
+                        <br>
+                        08:00 - 21:00
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <span>📱</span>
+
+                    <h3>WhatsApp</h3>
+
+                    <p>
+                        11 1234-5678
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="https://wa.me/5491112345678"
+                target="_blank"
+                class="whatsapp-button">
+
+                💬 Escribinos por WhatsApp
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= CARRITO ================= -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay">
+    </div>
+
+
+    <aside
+        class="cart"
+        id="cart">
+
+        <div class="cart-header">
+
+            <div>
+
+                <span>TU PEDIDO</span>
+
+                <h2>Carrito</h2>
+
+            </div>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div
+            id="cartItems"
+            class="cart-items">
+
+            <p class="empty-cart">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    $0
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout"
+                id="checkout">
+
+                📲 Pedir por WhatsApp
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="logo">
+                    ☕ <span>Velvet</span> Café
+                </div>
+
+                <p>
+                    Café artesanal · Pastelería ·
+                    Buenos momentos
+                </p>
+
+            </div>
+
+
+            <div class="socials">
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a
+                    href="https://wa.me/5491112345678"
+                    target="_blank">
+
+                    WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Velvet Café · Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
